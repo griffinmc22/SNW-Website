@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Brands from './components/Brands'
+import Service from './components/Service'
 
 // Blue Gray
 // #90ADC6
@@ -21,6 +22,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <Brands/>
+    <Service/>
     </div>
   )
 }
