@@ -9,11 +9,11 @@ const Brands = () => {
   return (
     <div className='h-[200px] w-full bg-gradient-to-b from-[#E9EAEC] to-[#90ADC6] justify-between items-center'>
         <div className='flex justify-between pt-4'>
-            <img src={Specialized} alt='Specialized Logo' className='h-[75px] w-[75px] m-4 md:h-[100px] md:w-[100px]'/>
-            <img src={Rockshox} alt='Rockshox Logo' className='h-[75px] w-[75px] m-4 md:h-[100px] md:w-[100px]'/>
-            <img src={KHS} alt='KHS Logo' className='h-[75px] w-[75px] m-4 md:h-[100px] md:w-[100px]'/>
-            <img src={Fox} alt='Fox Logo' className='h-[75px] w-[75px] m-4 md:h-[100px] md:w-[100px]'/>
-            <img src={Fitbike} alt='Fitbike Logo' className='h-[75px] w-[75px] m-4 md:h-[100px] md:w-[100px]'/>
+            <img src={Specialized} alt='Specialized Logo' className=' scale-50 m-4 md:scale-100'/>
+            <img src={Rockshox} alt='Rockshox Logo' className='scale-50 m-4 md:scale-100'/>
+            <img src={KHS} alt='KHS Logo' className='hidden md:block scale-50 m-4 md:h-[100px] md:scale-100'/>
+            <img src={Fox} alt='Fox Logo' className='scale-50 m-4 md:h-[100px] md:scale-100'/>
+            <img src={Fitbike} alt='Fitbike Logo' className='hidden md:block scale-50 m-4 md:h-[100px] md:scale-100'/>
         </div>
     </div>
   )

@@ -33,11 +33,10 @@ const Hero = () => {
 
     <div className="grid grid-cols-1 md:grid-cols-2 h-full pt-[100px] z-0 bg-[#E9EAEC]" >
         <div class="inset-0 flex items-center justify-start p-10">
-            <h2 class="text-[#333652]  font-bold text-3xl text-left bg-[#E9EAEC]">Spoke N Wheel: Your 1977-founded cycling haven, where expert service fuels every pedal-powered adventure. Experience the ride, embrace the lifestyle!</h2>
+            <h2 class="text-[#333652]  font-bold text-xl md:text-3xl text-left bg-[#E9EAEC]">Spoke N Wheel: Your 1977-founded cycling haven, where expert service fuels every pedal-powered adventure. Experience the ride, embrace the lifestyle!</h2>
             <img className='p-2 hover:rotate-180 duration-1000' src={wheel}></img>
         </div>
         <div className='flex justify-end content-center p-4'>
-
            {/* Scrolling Gallery */}
                 <div className=' max-w-[1000px] h-[500px] w-full px-4 relative group'>
                     <div style={{backgroundImage: `url(${slides[currentIndex]})`}} className='w-full h-full rounded-2xl bg-center bg-cover duration-500'></div>

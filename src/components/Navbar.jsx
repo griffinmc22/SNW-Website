@@ -21,17 +21,17 @@ const Navbar = () => {
                 </li>
                 <li className='mr-2 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
                 <Link to="about" smooth={true} duration={500}>
-                About
-                </Link>
-                </li>
-                <li className='mr-2 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                <Link to="brands" smooth={true} duration={500}>
                 Brands
                 </Link>
                 </li>
                 <li className='mr-2 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                <Link to="services" smooth={true} duration={500}>
+                <Link to="brands" smooth={true} duration={500}>
                 Services
+                </Link>
+                </li>
+                <li className='mr-2 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
+                <Link to="services" smooth={true} duration={500}>
+                About
                 </Link>
                 </li>
                 <li className='mr-2 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>

@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Brands from './components/Brands'
 import Service from './components/Service'
+import Icondivider from './components/Icondivider'
 
 // Blue Gray
 // #90ADC6
@@ -23,6 +24,7 @@ function App() {
     <Hero/>
     <Brands/>
     <Service/>
+    <Icondivider/>
     </div>
   )
 }
