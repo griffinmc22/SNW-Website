@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Discipline from './components/Discipline'
+import Footer from './components/Footer'
 
 // Blue Gray
 // #90ADC6
@@ -21,6 +22,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <Discipline/>
+    <Footer/>
     </div>
   )
 }
