@@ -1,32 +1,22 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Brands from './components/Brands'
-import Service from './components/Service'
-import Icondivider from './components/Icondivider'
+import React from 'react';
+import { Routes,Route } from 'react-router-dom';
 
-// Blue Gray
-// #90ADC6
+// Import your pages
+import Home from './pages/Home.jsx';
+import Navbar from './components/Navbar.jsx';
+import Footer from './components/Footer.jsx';
 
-// Pewter
-// #E9EAEC
-
-// Yellow
-// #FAD02C
-
-// Dark Blue
-// #333652
 
 function App() {
-
   return (
-    <div >
-    <Navbar/>
-    <Hero/>
-    <Brands/>
-    <Service/>
-    <Icondivider/>
-    </div>
-  )
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+      </Routes>
+      <Footer/>
+    </>
+  );
 }
 
-export default App
+export default App;
