@@ -1,6 +1,10 @@
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
+require('dotenv').config();
+const apikey = process.env.MAIL_CHIMP_API_KEY;
+const audienceID = process.env.AUDIENCE_ID;
+
 
 const app = express();
 
@@ -14,9 +18,7 @@ app.post('/subscribe', async (req, res) => {
     return res.status(400).send({ message: 'Invalid email address.' });
   }
 
-  const audienceID = 'c94466f145';
-  const apiKey = '37ddb71739dbcbe203b1177263a9c666-us21';
-  const server = apiKey.split('-')[1];
+  const server = apikey.split('-')[1];
   const url = `https://${server}.api.mailchimp.com/3.0/lists/${audienceID}/members/`;
 
   try {
@@ -29,7 +31,7 @@ app.post('/subscribe', async (req, res) => {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `apikey ${apiKey}`,
+          Authorization: `apikey ${apikey}`,
         },
       }
     );

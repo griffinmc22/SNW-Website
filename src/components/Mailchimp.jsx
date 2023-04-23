@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
 
 const MailchimpForm = () => {
@@ -10,7 +9,7 @@ const MailchimpForm = () => {
     e.preventDefault();
 
     try {
-        const response = await fetch(`${apiBaseUrl}/subscribe`, {
+        const response = await fetch(`/subscribe`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
