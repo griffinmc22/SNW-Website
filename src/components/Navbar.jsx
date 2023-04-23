@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Logo from '../assets/textlogodark.png'
+const Logo = '/assets/textlogodark.png'
 import {FaBars, FaTimes,} from 'react-icons/fa'
 import { BsFillCartFill, BsFillPersonFill, BsPinMapFill } from 'react-icons/bs'
 import {Link} from 'react-scroll'

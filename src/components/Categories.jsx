@@ -1,9 +1,9 @@
 import React from 'react'
-import Mtb from '../assets/Categories/mtb.png'
-import Road from '../assets/Categories/road.png'
-import Electric from '../assets/Categories/electric.png'
-import Gravel from '../assets/Categories/gravel.png'
-import Mechanic from '../assets/mechanic.png'
+const Mtb = '/assets/Categories/mtb.png'
+const Road = '/assets/Categories/road.png'
+const Electric = '/assets/Categories/electric.png'
+const Gravel = '/assets/Categories/gravel.png'
+const Mechanic = '/assets/Categories/mechanic.png'
 
 const Categories = () => {
   return (

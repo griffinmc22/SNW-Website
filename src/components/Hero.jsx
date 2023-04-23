@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import {BsArrowRightCircleFill} from 'react-icons/bs'
-import Sale from '../assets/sale.png'
-import Banner from '../assets/mainpagebanner.jpeg'
+const Sale = '/assets/sale.png'
+const Banner = '/assets/mainpagebanner.jpeg'
 
 
 
