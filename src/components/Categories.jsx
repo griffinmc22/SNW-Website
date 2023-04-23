@@ -39,19 +39,19 @@ const Categories = () => {
             {/* Add your 4-column grid content here */}
             <div className='relative group'>
               <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover brightness-50' src={Rentals}></img>
-              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-4xl p-2'>Rentals</p>
+              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-3xl p-2'>Rentals</p>
             </div>
             <div className='relative group'>
               <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover brightness-50' src={Maintenance}></img>
-              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-4xl p-2'>Maintenance</p>
+              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-3xl p-2'>Maintenance</p>
             </div>
             <div className='relative group'>
               <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover brightness-50' src={Apparel}></img>
-              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-4xl p-2'>Apparel</p>
+              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-3xl p-2'>Apparel</p>
             </div>
             <div className='relative group'>
               <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover brightness-50' src={Accessories}></img>
-              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-4xl p-2'>Accessories</p>
+              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-2xl md:text-3xl p-2'>Accessories</p>
             </div>
           </div>
             </div>

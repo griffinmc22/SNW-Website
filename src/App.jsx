@@ -5,6 +5,7 @@ import { Routes,Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import MailchimpForm from './components/Mailchimp.jsx';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
       </Routes>
+      <MailchimpForm/>
       <Footer/>
     </>
   );

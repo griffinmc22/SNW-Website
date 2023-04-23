@@ -5,9 +5,13 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "dev": "vite",
+    "dev": "concurrently \"npm run server\" \"vite\"",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server/server.js",
+    "start:server": "node server.js",
+    "start:prod": "concurrently \"npm run start\" \"npm run start:server\""
+
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,6 +25,7 @@
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
+    "concurrently": "^8.0.1",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1",
     "vite": "^4.2.0"
