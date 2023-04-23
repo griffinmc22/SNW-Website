@@ -14,6 +14,7 @@ COPY . .
 
 # Build the React app
 RUN npm run build
+# testing
 
 # Production stage
 FROM node:16-alpine
