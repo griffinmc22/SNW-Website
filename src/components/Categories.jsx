@@ -29,7 +29,30 @@ const Categories = () => {
                 <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full object-cover' src={Mechanic}></img>
                 <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-4xl p-2'>Services</p>
             </div>
-            
+            <div className='col-span-2'>
+            <div className='col-span-2'>
+          <div className='grid grid-cols-2 md:grid-cols-4 sm:gap-12 gap-6 text-black rounded-lg'>
+            {/* Add your 4-column grid content here */}
+            <div className='relative group'>
+              <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover' src={MTB}></img>
+              <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:cursor-pointer group-hover:border-black rounded-lg font-bold text-4xl p-2'>Road</p>
+              {/* Add additional content for this item */}
+            </div>
+            <div className='relative group'>
+              <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover' src={MTB}></img>
+              {/* Add additional content for this item */}
+            </div>
+            <div className='relative group'>
+              <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover' src={MTB}></img>
+              {/* Add additional content for this item */}
+            </div>
+            <div className='relative group'>
+              <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full h-48 object-cover' src={MTB}></img>
+              {/* Add additional content for this item */}
+            </div>
+          </div>
+            </div>
+          </div>
         </div>
     </div>
   )
