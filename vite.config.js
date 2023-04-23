@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
+    port: 3000,
   },
   build: {
     assetsInlineLimit: 0, // This disables inlining of assets as data URLs
