@@ -67,26 +67,26 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#333652] flex flex-col text-[#E9EAEC] justify-center items-center '}>
-            <li  className='py-6 text-center w-40 text-4xl border-2 border-[#E9EAEC] rounded-lg cursor-pointer'>
+            <li  className='py-6 text-center w-40 text-4xl cursor-pointer'>
                 <Link onClick={handleClick} to="home" smooth={true} duration={500}>
                 Home
                 </Link></li>
-            <li className='py-6 m-4 text-center w-40 text-4xl border-2 border-[#E9EAEC] rounded-lg cursor-pointer'>
+            <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>
                 <Link onClick={handleClick} to="about" smooth={true} duration={500}>
                 About
                 </Link>
             </li>
-            <li className='py-6 text-center w-40 text-4xl border-2 border-[#333652] rounded-lg cursor-pointer'>
+            <li className='py-6 text-center w-40 text-4xl cursor-pointer'>
                 <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
                 Brands
                 </Link>
             </li>
-            <li className='py-6 m-4 text-center w-40 text-4xl border-2 border-[#333652] rounded-lg cursor-pointer'>
+            <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>
                 <Link onClick={handleClick} to="links" smooth={true} duration={500}>
                 Services
                 </Link>
             </li>
-            <li className='py-6 m-4 text-center w-40 text-4xl border-2 border-[#333652] rounded-lg cursor-pointer'>
+            <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>
                 <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
                 Contact
                 </Link>
