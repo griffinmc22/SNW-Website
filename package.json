@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "concurrently \"vite\" \"npm run start:server\"",
     "dev": "concurrently \"npm run server\" \"vite\"",
     "build": "vite build",
     "preview": "vite preview",
     "server": "node server/server.js",
     "start:server": "node server.js",
-    "start:prod": "concurrently \"npm run start\" \"npm run start:server\""
+    "start:prod": "concurrently \"vite\" \"npm run start:server\""
 
   },
   "dependencies": {
