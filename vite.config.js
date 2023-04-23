@@ -8,4 +8,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 8080,
   },
+  build: {
+    assetsInlineLimit: 0, // This disables inlining of assets as data URLs
+    assetsInclude: /\.(png|jpe?g|gif|svg)$/i, // Add this line to include your image file types
+  },
 });

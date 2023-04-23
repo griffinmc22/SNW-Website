@@ -1,9 +1,9 @@
 import React from 'react'
-const Mtb = new URL('../assets/Categories/mtb.png', import.meta.url).href;
-const Road = new URL('../assets/Categories/road.png', import.meta.url).href;
-const Electric = new URL('../assets/Categories/electric.png', import.meta.url).href;
-const Gravel = new URL('../assets/Categories/gravel.png', import.meta.url).href;
-const Mechanic = new URL('../assets/mechanic.png', import.meta.url).href;
+import Mtb from '../assets/Categories/mtb.png'
+import Road from '../assets/Categories/road.png'
+import Electric from '../assets/Categories/electric.png'
+import Gravel from '../assets/Categories/gravel.png'
+import Mechanic from '../assets/mechanic.png'
 
 const Categories = () => {
   return (
