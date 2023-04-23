@@ -1,12 +1,12 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Discipline from '../components/Discipline'
+import Categories from '../components/Categories'
 
 const Home = () => {
   return (
     <div >
     <Hero/>
-    <Discipline/>
+    <Categories/>
     </div>
   )
 }
