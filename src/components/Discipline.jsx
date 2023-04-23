@@ -3,6 +3,7 @@ import MTB from '../assets/disciplines/mtb.png'
 import Road from '../assets/disciplines/road.png'
 import Electric from '../assets/disciplines/electric.png'
 import Gravel from '../assets/disciplines/gravel.png'
+import Mechanic from '../assets/mechanic.png'
 
 const Discipline = () => {
   return (
@@ -23,6 +24,10 @@ const Discipline = () => {
             <div className='relative group'>
                 <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer' src={Gravel}></img>
                 <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:border-black rounded-lg font-bold text-4xl p-2'>Gravel</p>
+            </div>
+            <div className='relative group col-span-2 justify-self-stretch'>
+                <img className='rounded-lg group-hover:opacity-50 opacity-75 group-hover:cursor-pointer w-full object-cover' src={Mechanic}></img>
+                <p className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:border-4 group-hover:bg-black group-hover:border-black rounded-lg font-bold text-4xl p-2'>Services</p>
             </div>
         </div>
     </div>
