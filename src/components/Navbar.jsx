@@ -2,14 +2,14 @@ import React, {useState} from 'react'
 const Logo = '/assets/textlogodark.png'
 import {FaBars, FaTimes,} from 'react-icons/fa'
 import { BsFillCartFill, BsFillPersonFill, BsPinMapFill } from 'react-icons/bs'
-import {Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center p-4 bg-[#333652] text-[#E9EAEC] '>
+    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center p-4 bg-[#333652] text-[#E9EAEC]'>
         <div className='flex justify-between'>
             <div className='pr-8'>
                 <img  src={Logo} alt='Logo Image'style={{width: '200px'}}/>
@@ -18,27 +18,27 @@ const Navbar = () => {
                 <div className='flex items-center'>
                     <ul className='hidden md:flex items-center px-4 mr-10'>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="home" smooth={true} duration={500}>
+                        <Link to="/">
                         Home
                         </Link>
                         </li>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="about" smooth={true} duration={500}>
+                        <Link to="/about">
                         About
                         </Link>
                         </li>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="brands" smooth={true} duration={500}>
+                        <Link to="/services">
                         Services
                         </Link>
                         </li>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="services" smooth={true} duration={500}>
+                        <Link to="/brands">
                         Brands
                         </Link>
                         </li>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="contact" smooth={true} duration={500}>
+                        <Link to="/contact" smooth={true} duration={500}>
                         Contact
                         </Link>
                         </li>
@@ -68,32 +68,33 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#333652] flex flex-col text-[#E9EAEC] justify-center items-center '}>
             <li  className='py-6 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                <Link onClick={handleClick} to="/home">
                 Home
                 </Link></li>
             <li className='py-6 m-4 text-center w-40 text-4xl'>
-                <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                <Link onClick={handleClick} to="/about">
                 About
                 </Link>
             </li>
             <li className='py-6 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+                <Link onClick={handleClick} to="/brands">
                 Brands
                 </Link>
             </li>
             <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="links" smooth={true} duration={500}>
+                <Link onClick={handleClick} to="/services" >
                 Services
                 </Link>
             </li>
             <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                <Link onClick={handleClick} to="/contact">
                 Contact
                 </Link>
             </li>
         </ul>
         
     </div>
+    
   )
 }
 
