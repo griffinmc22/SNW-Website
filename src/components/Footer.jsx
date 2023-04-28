@@ -47,7 +47,7 @@ const Footer = () => {
         {/* List 3 */}
         <ul className="flex flex-col justify-center col-span-1 text-right pr-12">
           <li className='font-bold md:text-2xl  hover:cursor-pointer'>Spoke N Wheel Bicycles</li>
-          <a className=' py-2 hover:underline md:text-xl text-gray-300' href='/service'>
+          <a className=' py-2 hover:underline md:text-xl text-gray-300' href='/location'>
               <p>6804 Platt Ave</p>
               <p>West Hills, CA 91307</p>
           </a>

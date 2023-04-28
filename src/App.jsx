@@ -7,6 +7,7 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import MailchimpForm from './components/Mailchimp.jsx';
 import About from './pages/About.jsx';
+import Location from './pages/Location.jsx';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/location" element={<Location/>} />
       </Routes>
       <MailchimpForm/>
       <Footer/>

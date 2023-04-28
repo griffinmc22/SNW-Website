@@ -13,10 +13,12 @@
     "start:prod": "concurrently \"vite\" \"npm run start:server\""
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.18.1",
     "axios": "^1.3.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "mapbox-gl": "^2.14.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
