@@ -3,13 +3,16 @@ const Logo = '/assets/textlogodark.png'
 import {FaBars, FaTimes,} from 'react-icons/fa'
 import { BsFillCartFill, BsFillPersonFill, BsPinMapFill } from 'react-icons/bs'
 import {Link} from 'react-router-dom'
+import { UserAuth } from '../context/AuthContext'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
+    const {user} = UserAuth();
+
   return (
-    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center p-4 bg-[#333652] text-[#E9EAEC]'>
+    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center pb-4 bg-[#333652] text-[#E9EAEC]'>
         <div className='flex justify-between'>
             <div className='pr-8'>
                 <Link to="/">
@@ -46,21 +49,21 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='flex'>
+                <div className='flex '>
                 <ul className='hidden md:flex items-center'>
                     <li className=''>
                         <Link to='/location'>
-                        <BsPinMapFill className=' text-xl m-2 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>
+                        <BsPinMapFill className=' text-xl m-2 md:scale-125 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>
                         </Link>
                     </li>
                     <li className=''>
                         <Link to='/login'>
-                        <BsFillPersonFill className='text-2xl m-2 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>
+                            {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=100`}className="rounded-full scale-50 border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='text-2xl m-2 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>}
                         </Link>
                     </li>
                     <li className=''>
                         <Link to='/cart'>
-                        <BsFillCartFill className='text-xl m-2 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>
+                        <BsFillCartFill className='text-xl m-2 md:scale-125 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>
                         </Link>
                     </li>
                 </ul>
