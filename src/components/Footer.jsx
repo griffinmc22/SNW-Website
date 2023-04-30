@@ -39,7 +39,7 @@ const Footer = () => {
           <a className=' py-2 hover:underline text-gray-300' href='/contact'>
               Contact
           </a>
-          <a className=' py-2 hover:underline text-gray-300' href='/locator'>
+          <a className=' py-2 hover:underline text-gray-300' href='/location'>
               Store Locator
           </a>
         </ul>

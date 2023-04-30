@@ -12,7 +12,7 @@ const Navbar = () => {
     const {user} = UserAuth();
 
   return (
-    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center pb-4 bg-[#333652] text-[#E9EAEC]'>
+    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center pb-4 px-4 bg-[#333652] text-[#E9EAEC]'>
         <div className='flex justify-between'>
             <div className='pr-8'>
                 <Link to="/">
@@ -57,8 +57,8 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className=''>
-                        <Link to='/login'>
-                            {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=100`}className="rounded-full scale-50 border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='text-2xl m-2 hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'/>}
+                        <Link to='/account'>
+                            {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=100`}className="rounded-full scale-50 border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='text-2xl m-2 hover:text-[#FAD02C] md:scale-125 hover:scale-110 duration-500 cursor-pointer'/>}
                         </Link>
                     </li>
                     <li className=''>
