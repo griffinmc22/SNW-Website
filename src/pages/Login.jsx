@@ -5,9 +5,20 @@ import { UserAuth } from '../context/AuthContext';
 
 const Login = () => {
 
-    const { googleSignIn, user } = UserAuth()
+    const { googleSignIn, user, emailSignUp } = UserAuth()
     const navigate = useNavigate();
-    
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setError('');
+        try {   
+            emailSignUp(email, password, firstname, lastname);
+            navigate('/account')
+        } catch (error) {
+            setError(error.message)
+            console.log(error)
+        }
+    };
 
     const handleGoogleSignIn = async () => {
         try {
@@ -17,9 +28,14 @@ const Login = () => {
         }
     }
 
-    useEffect(() => {
-        if (user) {
-          navigate("/account");
+    const isEmpty = (obj) => {
+        return obj === null || obj === undefined || (Object.keys(obj).length === 0 && obj.constructor === Object);
+      };
+    
+      useEffect(() => {
+        if (!isEmpty(user)) { // Check if user is not empty
+          console.log(user);
+          navigate('/account');
         }
       }, [user, navigate]);
 
@@ -27,27 +43,29 @@ const Login = () => {
     <div className='flex flex-col items-center h-full w-full justify-center bg-[#E9EAEC] p-4'>
         <div className='flex w-full flex-col items-center'>
             <div className='w-3/4 md:w-1/2 h-[500px] rounded-lg border-4 bg-[#333652] border-[#333652]'>
-                <div className='flex flex-col w-full justify-center items-center space-y-12'>
-                    <p className='text-2xl font-bold text-[#E9EAEC] pt-4'>Customer Login</p>
-                    <a href='/signup' className='text-[#E9EAEC] hover:underline'> No Account? Click to sign up.</a>
-                    <div className="flex w-3/4 rounded-lg bg-[#E9EAEC] p-4">
-                    <input
-                        className="w-full h-full bg-[#E9EAEC] border-none outline-none"
-                        placeholder="Username"
-                    />
+                <form>
+                    <div className='flex flex-col w-full justify-center items-center space-y-12'>
+                        <p className='text-2xl font-bold text-[#E9EAEC] pt-4'>Customer Login</p>
+                        <a href='/signup' className='text-[#E9EAEC] hover:underline'> No Account? Click to sign up.</a>
+                        <div className="flex w-3/4 rounded-lg bg-[#E9EAEC] p-4">
+                        <input
+                            className="w-full h-full bg-[#E9EAEC] border-none outline-none"
+                            placeholder="Email"
+                        />
+                        </div>
+                        <div className="flex w-3/4 rounded-lg bg-[#E9EAEC] p-4">
+                        <input
+                            className="w-full h-full bg-[#E9EAEC] border-none outline-none"
+                            placeholder="Password"
+                        />
+                        </div>
+                        <div className="flex rounded-lg bg-[#E9EAEC] p-4 hover:scale-110">
+                        <button className=" text-[#333652]- font-bold text-xl border-none outline-none">
+                            Login
+                        </button>
+                        </div>
                     </div>
-                    <div className="flex w-3/4 rounded-lg bg-[#E9EAEC] p-4">
-                    <input
-                        className="w-full h-full bg-[#E9EAEC] border-none outline-none"
-                        placeholder="Password"
-                    />
-                    </div>
-                    <div className="flex rounded-lg bg-[#E9EAEC] p-4 hover:scale-110">
-                    <button className=" text-[#333652]- font-bold text-xl border-none outline-none">
-                        Login
-                    </button>
-                    </div>
-                </div>
+                </form>
             </div>
             <div className="flex justify-center items-end w-1/2 pt-2">
                 <GoogleButton
