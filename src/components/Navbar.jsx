@@ -12,19 +12,19 @@ const Navbar = () => {
     const {user} = UserAuth();
 
   return (
-    <div className='z-10 fixed w-full h-[100px] flex md:block justify-between items-center pb-4 bg-[#333652] text-[#E9EAEC]'>
+    <div className='z-10 fixed w-full h-[100px] flex md:block justify-center md:justify-between items-center pb-4 bg-[#333652] text-[#E9EAEC]'>
         <div className='flex md:justify-between w-full h-[100px]'>
             <div className='flex items-center w-full md:w-auto md:justify-start justify-between'>
-                <div className='flex items-center justify-start mr-[-50px] md:mr-0'>
+                <div className='flex items-center justify-between md:justify-start pl-2'>
                 <Link to='/account'>
-                    {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=200`}className="md:hidden scale-100 rounded-full border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='md:hidden scale-100 text-2xl hover:text-[#FAD02C]  hover:scale-110 duration-500 cursor-pointer'/>}
+                    {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=200`}className="md:hidden scale-50 rounded-full border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='md:hidden scale-150 text-2xl hover:text-[#FAD02C]  hover:scale-110 duration-500 cursor-pointer'/>}
                 </Link>
                 </div>
                 <Link to="/">
                 <img  src={Logo} alt='Logo Image'style={{width: '200px'}}/>
                 </Link>
                 <div onClick={handleClick} className='md:hidden px-4 z-10 text-[#E9EAEC]'>
-                    {!nav ? <FaBars/> : <FaTimes/>}
+                    {!nav ? <FaBars className='scale-150'/> : <FaTimes/>}
                 </div>
             </div>
             {/* menu */}
