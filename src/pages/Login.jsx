@@ -5,14 +5,14 @@ import { UserAuth } from '../context/AuthContext';
 
 const Login = () => {
 
-    const { googleSignIn, user, emailSignUp } = UserAuth()
+    const { googleSignIn, user, emailSignIn } = UserAuth()
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setError('');
         try {   
-            emailSignUp(email, password, firstname, lastname);
+            emailSignIn(email, password);
             navigate('/account')
         } catch (error) {
             setError(error.message)

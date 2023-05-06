@@ -15,6 +15,8 @@ import PrivateRouteWrapper from './components/PrivateRoute.jsx';
 import Account from './pages/Account.jsx';
 import Signup from './pages/Signup.jsx'; // Import the Signup component
 import Cart from './pages/Cart.jsx';
+import Contact from './pages/Contact.jsx';
+import Serivces from './pages/Serivces.jsx';
 
 function App() {
   return (
@@ -28,7 +30,9 @@ function App() {
         <Route path="/location" element={<Location/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/cart" element={<Cart/>} /> 
+        <Route path="/services" element={<Serivces/>} />
         <Route path="/signup" element={<Signup/>} /> {/* Add the Signup route */}
+        <Route path="/contact" element={<Contact/>} /> 
         <Route path="/account" element={<PrivateRouteWrapper />}>
             <Route path="" element={<Account />} />
         </Route>

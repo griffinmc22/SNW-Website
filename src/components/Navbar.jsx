@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className='flex items-center w-full md:w-auto md:justify-start justify-between'>
                 <div className='flex items-center justify-start mr-[-50px] md:mr-0'>
                 <Link to='/account'>
-                    {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=200`}className="md:hidden scale-50 rounded-full border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='md:hidden scale-50 text-2xl hover:text-[#FAD02C]  hover:scale-110 duration-500 cursor-pointer'/>}
+                    {user?.displayName ? <img referrerPolicy="no-referrer"src={`${user.photoURL}?sz=200`}className="md:hidden scale-100 rounded-full border-4 border-transparent hover:border-[#FAD02C]"></img>: <BsFillPersonFill className='md:hidden scale-100 text-2xl hover:text-[#FAD02C]  hover:scale-110 duration-500 cursor-pointer'/>}
                 </Link>
                 </div>
                 <Link to="/">
@@ -43,11 +43,6 @@ const Navbar = () => {
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
                         <Link to="/services">
                         Services
-                        </Link>
-                        </li>
-                        <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
-                        <Link to="/brands">
-                        Brands
                         </Link>
                         </li>
                         <li className='m-4 font-bold hover:text-[#FAD02C] hover:scale-110 duration-500 cursor-pointer'>
@@ -84,17 +79,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#333652] flex flex-col text-[#E9EAEC] justify-center items-center '}>
             <li  className='py-6 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="/home">
+                <Link onClick={handleClick} to="/">
                 Home
                 </Link></li>
             <li className='py-6 m-4 text-center w-40 text-4xl'>
                 <Link onClick={handleClick} to="/about">
                 About
-                </Link>
-            </li>
-            <li className='py-6 text-center w-40 text-4xl cursor-pointer'>
-                <Link onClick={handleClick} to="/brands">
-                Brands
                 </Link>
             </li>
             <li className='py-6 m-4 text-center w-40 text-4xl cursor-pointer'>

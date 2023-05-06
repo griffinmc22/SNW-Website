@@ -18,16 +18,16 @@ const About = () => {
             <p className="text-lg">
                 Visit Spoke N Wheel to experience our unwavering commitment to personalized service and support. Join our community of cycling enthusiasts and let us help you embark on your next adventure.
             </p>
-                <div className='grid grid-cols-2 py-4'>
+                <div className='grid md:grid-cols-2 py-4'>
+                    <div className='flex justify-center px-6'>
+                        <img className='object-contain' src={Team} ></img>
+                    </div>
                     <div>
                         <h1 className="text-2xl md:text-4xl font-bold mb-4">Our Team</h1>
                         <p className="text-lg mb-4">
                             At Spoke N Wheel, our team is more than just a group of employees – we are a family of passionate cycling enthusiasts, dedicated to sharing our love for bicycles with the community. Since 1977, we have been serving the valley with a steadfast commitment to quality products and outstanding service, and our team is the driving force behind this legacy.                    </p>
                         <p className="text-lg mb-4">
                             We believe that cycling has the power to transform lives, and we are honored to play a part in your journey. As you walk through our doors, you'll be greeted with warm smiles and genuine enthusiasm for helping you explore the world on two wheels. So, come on in, meet the Spoke N Wheel family, and let us embark on this incredible cycling adventure together!                        </p>
-                    </div>
-                    <div className='flex justify-center px-6'>
-                        <img className='object-contain' src={Team} ></img>
                     </div>
                 </div>
         </div>
