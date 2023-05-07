@@ -30,7 +30,7 @@ const Footer = () => {
 
         <ul className="flex flex-col items-center col-span-1">
           <li className="font-bold md:text-xl border-b-2"> Links </li>
-          <a className=' py-2 hover:underline text-gray-300' href='/service'>
+          <a className=' py-2 hover:underline text-gray-300' href='/services'>
               Service
           </a>
           <a className=' py-2 hover:underline text-gray-300' href='/about'>
